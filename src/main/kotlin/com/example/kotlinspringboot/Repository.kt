@@ -5,3 +5,7 @@ import org.springframework.data.repository.CrudRepository
 interface Repository: CrudRepository<Product, Long> {
     fun findAllBy(): List<Product>
 }
+
+interface MappingRepository: CrudRepository<Mapping, Long> {
+
+}
